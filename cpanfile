@@ -1,7 +1,8 @@
 
-# requires '', '0';
+requires 'JSON::MaybeXS';
+requires 'Moose';
 
 on test => sub {
-requires 'Test::More', '1.302015';
+  requires 'Test2::Suite';
+  requires 'Module::Runtime';
 };
-
