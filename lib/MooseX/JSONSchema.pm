@@ -7,7 +7,6 @@ Moose::Exporter->setup_import_methods(
   with_meta => [
     qw( array string object number integer boolean ),
     qw( json_schema_id json_schema_title json_schema_schema ),
-    qw( generate_extra ),
   ],
   base_class_roles => ['MooseX::JSONSchema::Role'],
   class_metaroles => {
@@ -21,8 +20,6 @@ Moose::Exporter->setup_import_methods(
 sub json_schema_id { shift->json_schema_id(shift) }
 sub json_schema_title { shift->json_schema_title(shift) }
 sub json_schema_schema { shift->json_schema_schema(shift) }
-
-sub generate_extra { shift->generate_extra(shift) }
 
 sub array { add_json_schema_attribute( array => @_ ) }
 sub string { add_json_schema_attribute( string => @_ ) }
