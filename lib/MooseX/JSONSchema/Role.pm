@@ -1,4 +1,5 @@
 package MooseX::JSONSchema::Role;
+# ABSTRACT: Role for classes who have JSON Schema
 
 use Moose::Role;
 use JSON::MaybeXS;

@@ -1,4 +1,5 @@
 package MooseX::JSONSchema;
+# ABSTRACT: Adding JSON Schema capabilities to your Moose class
 
 use Moose::Exporter;
 use Carp qw( croak );
@@ -101,6 +102,8 @@ sub add_json_schema_attribute {
   my $json_schema_data_json = $person->json_schema_data_json;
 
 =head1 DESCRIPTION
+
+B<THIS API IS WORK IN PROGRESS>
 
 =head1 SUPPORT
 

@@ -1,4 +1,5 @@
 package MooseX::JSONSchema::AttributeTrait;
+# ABSTRACT: Trait for JSON Schema attributes
 
 use Moose::Role;
 

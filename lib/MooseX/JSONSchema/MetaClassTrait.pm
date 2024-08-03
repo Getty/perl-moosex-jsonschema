@@ -1,4 +1,5 @@
 package MooseX::JSONSchema::MetaClassTrait;
+# ABSTRACT: Trait for meta classes having a JSON Schema
 
 use Moose::Role;
 use JSON::MaybeXS;
